@@ -44,7 +44,7 @@ class TanLine(Scene):
 
 
         #Creates an cartesian plane and moves it to the left side of the screen.
-        axes = Axes(x_range=[xmin, xmax, xtick], y_range=[ymin, ymax, ytick], x_length=5.5, y_length=5.5, ).shift(LEFT*3.5)
+        axes = Axes(x_range=[xmin, xmax, xtick], y_range=[ymin, ymax, ytick], axis_config={"include_numbers": True}, x_length=5.5, y_length=5.5, ).shift(LEFT*3.5)
         numberplane = NumberPlane(x_range=[xmin, xmax, xtick], y_range=[ymin, ymax, ytick],   x_length=5.5, y_length=5.5,).shift(LEFT*3.5)
         
 
